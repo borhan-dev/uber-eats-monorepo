@@ -1,0 +1,42 @@
+{
+  "name": "root",
+  "private": false,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "build": "lerna run build",
+    "clean": "lerna clean",
+    "lint": "eslint . --ext .ts --fix --quiet",
+    "prepare": "husky install",
+    "prepublishOnly": "npm run build",
+    "prettier": "node node_modules/.bin/prettier --check \"**/*.{js,json,ts,yml,yaml\"",
+    "prettier:write": "node node_modules/.bin/prettier --write \"**/*.{js,json,ts,yml,yaml\"",
+    "publish": "lerna publish",
+    "publish:git": "lerna publish from-git",
+    "publish:package": "lerna publish from-package"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.5.1",
+    "@commitlint/config-conventional": "^17.4.4",
+    "@typescript-eslint/eslint-plugin": "^5.58.0",
+    "@typescript-eslint/parser": "^5.58.0",
+    "commitizen": "^4.3.0",
+    "conventional-changelog-cli": "^2.2.2",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^8.38.0",
+    "fbjs-scripts": "^3.0.1",
+    "husky": "^8.0.3",
+    "lerna": "^6.6.1",
+    "prettier": "^2.8.7",
+    "ts-jest": "^29.1.0",
+    "typescript": "^5.0.4"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "version": "0.1.0"
+}

@@ -1,0 +1,8 @@
+#Custom
+
+/node_modules/**
+tmp
+/packages/*/build/**
+/packages/*/coverage/**
+package.json
+package-lock.json

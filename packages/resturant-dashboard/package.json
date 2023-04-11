@@ -1,0 +1,19 @@
+{
+  "name": "resturant-dashboard",
+  "version": "0.1.0",
+  "description": "Resturant Dahboard",
+  "author": "Borhan Uddin <borhan.dev@gmail.com>",
+  "homepage": "http:///",
+  "license": "ISC",
+  "main": "lib/resturant-dashboard.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "test": "node ./__tests__/resturant-dashboard.test.js"
+  }
+}
